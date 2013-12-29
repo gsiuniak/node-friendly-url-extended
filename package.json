@@ -1,0 +1,23 @@
+{
+  "name": "friendly-url",
+  "version": "0.1.0",
+  "description": "tranforms the given url portion to a user-friendly form",
+  "main": "friendly-url.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tallesl/node-friendly-url.git"
+  },
+  "keywords": [
+    "friendly",
+    "url"
+  ],
+  "author": "Talles L",
+  "license": "Public Domain",
+  "bugs": {
+    "url": "https://github.com/tallesl/node-friendly-url/issues"
+  },
+  "homepage": "https://github.com/tallesl/node-friendly-url"
+}
