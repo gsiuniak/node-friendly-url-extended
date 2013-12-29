@@ -4,7 +4,7 @@
   "description": "tranforms the given url portion to a user-friendly form",
   "main": "friendly-url.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/nodeunit tests.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/tallesl/node-friendly-url/issues"
   },
-  "homepage": "https://github.com/tallesl/node-friendly-url"
+  "homepage": "https://github.com/tallesl/node-friendly-url",
+  "devDependencies": {
+    "nodeunit": "~0.8.2"
+  }
 }
