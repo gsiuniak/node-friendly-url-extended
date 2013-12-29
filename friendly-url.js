@@ -1,0 +1,22 @@
+function remapInternationalCharToAscii (c) {
+  if ('àåáâäãåa'.indexOf(c) != -1) return 'a'
+  else if ('èéêëe'.indexOf(c) != -1) return 'e'
+  else if ('ìíîïi'.indexOf(c) != -1) return 'i'
+  else if ('òóôõöøoð'.indexOf(c) != -1) return 'o'
+  else if ('ùúûüuu'.indexOf(c) != -1) return 'u'
+  else if ('çccc'.indexOf(c) != -1) return 'c'
+  else if ('zzž'.indexOf(c) != -1) return 'z'
+  else if ('ssšs'.indexOf(c) != -1) return 's'
+  else if ('ñn'.indexOf(c) != -1) return 'n'
+  else if ('ýÿ'.indexOf(c) != -1) return 'y'
+  else if ('gg'.indexOf(c) != -1) return 'g'
+  else if (c == 'r') return 'r'
+  else if (c == 'l') return 'l'
+  else if (c == 'd') return 'd'
+  else if (c == 'ß') return 'ss'
+  else if (c == 'Þ') return 'th'
+  else if (c == 'h') return 'h'
+  else if (c == 'j') return 'j'
+  else return ''
+}
+
