@@ -1,3 +1,40 @@
+exports.doIt = function (title, maxlen) {
+  if (!title) return ''
+
+  maxlen = maxlen || 80
+  len = title.length
+  var prevdash = false
+  var sb = [ ]
+  var c
+
+  for (var i = 0; i < len; ++i) {
+    c = title[i]
+    if ((c >= 'a' && c <= 'z') || (c >= '0' && c <= '9')) {
+      sb.push(c)
+      prevdash = false
+    } else if (c >= 'A' && c <= 'Z') {
+      sb.push(c.toLowerCase())
+      prevdash = false
+    } else if (c == ' ' || c == ',' || c == '.' || c == '/' ||
+      c == '\\' || c == '-' || c == '_' || c == '=') {
+      if (!prevdash && sb.length > 0) {
+        sb.push('-')
+        prevdash = true
+      }
+    } else if (c.charCodeAt(0) >= 128) {
+      var remapped = remapInternationalCharToAscii(c)
+      if (remapped) {
+        sb.push(remapped)
+        prevdash = false;
+      }
+    }
+    if (sb.length == maxlen) break
+  }
+
+  if (prevdash) return sb.join('').substring(0, sb.length - 1)
+  else return sb.join('')
+}
+
 function remapInternationalCharToAscii (c) {
   if ('àåáâäãåa'.indexOf(c) != -1) return 'a'
   else if ('èéêëe'.indexOf(c) != -1) return 'e'
