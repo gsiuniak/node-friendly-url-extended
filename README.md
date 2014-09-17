@@ -6,11 +6,13 @@ Transforms the given url portion to a user-friendly form.
 
 There's just a `doIt` function in the module, a synchronous function that receives a text and returns it transformed to a user-friendly one:
 
-    var friendlyUrl = require('friendly-url')
+```javascript
+var friendlyUrl = require('friendly-url')
 
-    var url = 'What does “use strict” do in JavaScript, and what is the reasoning behind it?'
-    var friendly = friendlyUrl.doIt(url)
-    console.log(friendly) // prints 'what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it'
+var url = 'What does “use strict” do in JavaScript, and what is the reasoning behind it?'
+var friendly = friendlyUrl.doIt(url)
+console.log(friendly) // prints 'what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it'
+```
 
 ## Implementation
 
