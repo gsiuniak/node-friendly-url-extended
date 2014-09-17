@@ -1,7 +1,7 @@
 {
   "name": "friendly-url",
   "version": "0.1.0",
-  "description": "tranforms the given url portion to a user-friendly form",
+  "description": "transforms the given url portion to a user-friendly form",
   "main": "friendly-url.js",
   "scripts": {
     "test": "./node_modules/.bin/nodeunit tests.js"
