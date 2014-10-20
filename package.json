@@ -1,26 +1,29 @@
 {
-  "name": "friendly-url",
-  "version": "0.1.0",
-  "description": "transforms the given url portion to a user-friendly form",
-  "main": "friendly-url.js",
-  "scripts": {
-    "test": "./node_modules/.bin/nodeunit tests.js"
+  "author": "Talles L <talleslasmar@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/tallesl/node-friendly-url/issues"
   },
+  "description": "Stack Exchange's friendly url function",
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.2",
+    "mocha": "^1.21.5"
+  },
+  "homepage": "https://github.com/tallesl/node-friendly-url",
+  "keywords": [
+    "friendly",
+    "url",
+    "stackexchange"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "friendly-url",
   "repository": {
     "type": "git",
     "url": "https://github.com/tallesl/node-friendly-url.git"
   },
-  "keywords": [
-    "friendly",
-    "url"
-  ],
-  "author": "Talles L",
-  "license": "Public Domain",
-  "bugs": {
-    "url": "https://github.com/tallesl/node-friendly-url/issues"
+  "scripts": {
+    "test": "mocha"
   },
-  "homepage": "https://github.com/tallesl/node-friendly-url",
-  "devDependencies": {
-    "nodeunit": "~0.8.2"
-  }
+  "version": "1.0.0"
 }

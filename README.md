@@ -1,19 +1,25 @@
-# Friendly Url [![Build Status](https://travis-ci.org/tallesl/node-friendly-url.png)](https://travis-ci.org/tallesl/friendly-url) [![NPM version](https://badge.fury.io/js/friendly-url.png)](http://badge.fury.io/js/friendly-url)
+# :grinning: Friendly Url
 
-Transforms the given url portion to a user-friendly form.
+[![build](https://travis-ci.org/tallesl/friendly-url.png)](https://travis-ci.org/tallesl/friendly-url)
+[![coverage](https://coveralls.io/repos/tallesl/friendly-url/badge.png?branch=master)](https://coveralls.io/r/tallesl/friendly-url?branch=master)
+[![dependencies](https://david-dm.org/tallesl/friendly-url.png)](https://david-dm.org/tallesl/friendly-url)
+[![devDependencies](https://david-dm.org/tallesl/friendly-url/dev-status.png)](https://david-dm.org/tallesl/friendly-url#info=devDependencies)
+[![npm module](https://badge.fury.io/js/friendly-url.png)](http://badge.fury.io/js/friendly-url)
+
+[![npm](https://nodei.co/npm/friendly-url.png?mini=true)](https://nodei.co/npm/friendly-url/)
+
+A friendly url function made and used by Stack Exchange on their various websites
+[*](http://stackoverflow.com/a/25486)
+[*](http://meta.stackoverflow.com/a/7696)
 
 ## Usage
 
-There's just a `doIt` function in the module, a synchronous function that receives a text and returns it transformed to a user-friendly one:
-
 ```javascript
-var friendlyUrl = require('friendly-url')
-
-var url = 'What does “use strict” do in JavaScript, and what is the reasoning behind it?'
-var friendly = friendlyUrl.doIt(url)
-console.log(friendly) // prints 'what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it'
+$ npm install friend-url
+friendly-url@1.0.0 node_modules/friendly-url
+$ node
+> var friendlyUrl = require('friendly-url')
+undefined
+friendlyUrl('What does “use strict” do in JavaScript, and what is the reasoning behind it?')
+'what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it'
 ```
-
-## Implementation
-
-Adapted from the one used at stackoverflow [1](http://stackoverflow.com/a/25486 "How does Stack Overflow generate its SEO-friendly URLs?") [2](http://meta.stackoverflow.com/a/7696 "Non US-ASCII characters dropped from full (profile) URL").

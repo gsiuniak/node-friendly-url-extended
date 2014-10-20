@@ -1,4 +1,4 @@
-exports.doIt = function (title, maxlen) {
+module.exports = function (title, maxlen) {
   if (!title) return ''
 
   maxlen = maxlen || 80
@@ -56,4 +56,3 @@ function remapInternationalCharToAscii (c) {
   else if (c == 'j') return 'j'
   else return ''
 }
-
