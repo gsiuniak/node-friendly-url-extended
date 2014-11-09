@@ -23,3 +23,4 @@ undefined
 friendlyUrl('What does “use strict” do in JavaScript, and what is the reasoning behind it?')
 'what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it'
 ```
+

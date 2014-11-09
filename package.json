@@ -9,14 +9,18 @@
     "istanbul": "^0.3.2",
     "mocha": "^2.0.0"
   },
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
+  },
   "homepage": "https://github.com/tallesl/node-friendly-url",
   "keywords": [
     "friendly",
     "url",
     "stackexchange"
   ],
-  "license": "ISC",
-  "main": "index.js",
+  "license": "Fair",
+  "main": "./lib/friendly-url.js",
   "name": "friendly-url",
   "repository": {
     "type": "git",
@@ -27,3 +31,4 @@
   },
   "version": "1.0.0"
 }
+

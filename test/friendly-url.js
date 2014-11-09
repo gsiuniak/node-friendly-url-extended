@@ -1,5 +1,5 @@
 var assert = require('assert')
-  , friendlyUrl = require('../index')
+  , friendlyUrl = require('../lib/friendly-url')
 
 it('Résumé', function () {
 
@@ -134,3 +134,4 @@ it('Why is subtracting these two times (in 1927) giving a strange result?', func
   assert.strictEqual(actual, expected)
 
 })
+
