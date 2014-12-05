@@ -135,3 +135,17 @@ it('Why is subtracting these two times (in 1927) giving a strange result?', func
 
 })
 
+// One sentence with all of the German umlauts + ß + punctuation mark.
+it('Sie läuft in einen Fluss und tötet alle grünen Frösche mit süßem Zucker', function() {
+
+  // arrange
+  var title = 'Sie läuft in einen Fluss und tötet alle grünen Frösche mit süßem Zucker'
+      , expected = 'sie-laeuft-in-einen-fluss-und-toetet-alle-gruenen-froesche-mit-suessem-zucker'
+
+  // act
+  var actual = friendlyUrl(title)
+
+  // assert
+  assert.strictEqual(actual, expected)
+
+})
