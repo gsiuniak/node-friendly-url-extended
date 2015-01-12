@@ -15,7 +15,7 @@ A friendly url function made and used by Stack Exchange on their various website
 ## Usage
 
 ```javascript
-$ npm install friend-url
+$ npm install friendly-url
 friendly-url@1.0.2 node_modules/friendly-url
 $ node
 > var friendlyUrl = require('friendly-url')
