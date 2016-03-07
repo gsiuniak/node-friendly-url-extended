@@ -1,22 +1,31 @@
-# :grinning: Friendly Url
+# :grinning: friendly-url
 
-[![build](https://travis-ci.org/tallesl/friendly-url.png)](https://travis-ci.org/tallesl/friendly-url)
-[![coverage](https://coveralls.io/repos/tallesl/friendly-url/badge.png?branch=master)](https://coveralls.io/r/tallesl/friendly-url?branch=master)
-[![dependencies](https://david-dm.org/tallesl/friendly-url.png)](https://david-dm.org/tallesl/friendly-url)
-[![devDependencies](https://david-dm.org/tallesl/friendly-url/dev-status.png)](https://david-dm.org/tallesl/friendly-url#info=devDependencies)
-[![npm module](https://badge.fury.io/js/friendly-url.png)](http://badge.fury.io/js/friendly-url)
+[![][build-img]][build]
+[![][coverage-img]][coverage]
+[![][dependencies-img]][dependencies]
+[![][devdependencies-img]][devdependencies]
+[![][version-img]][version]
 
-[![npm](https://nodei.co/npm/friendly-url.png?mini=true)](https://nodei.co/npm/friendly-url/)
+A friendly url function made and used by Stack Exchange on their various websites ([1]&nbsp;[2]).
 
-A friendly url function made and used by Stack Exchange on their various websites
-[*](http://stackoverflow.com/a/25486)
-[*](http://meta.stackoverflow.com/a/7696)
+[build]:               https://travis-ci.org/tallesl/node-friendly-url
+[build-img]:           https://travis-ci.org/tallesl/node-friendly-url.svg
+[coverage]:            https://coveralls.io/r/tallesl/node-friendly-url?branch=master
+[coverage-img]:        https://coveralls.io/repos/tallesl/node-friendly-url/badge.svg?branch=master
+[dependencies]:        https://david-dm.org/tallesl/node-friendly-url
+[dependencies-img]:    https://david-dm.org/tallesl/node-friendly-url.svg
+[devdependencies]:     https://david-dm.org/tallesl/node-friendly-url#info=devDependencies
+[devdependencies-img]: https://david-dm.org/tallesl/node-friendly-url/dev-status.svg
+[version]:             https://www.npmjs.com/package/friendly-url
+[version-img]:         https://badge.fury.io/js/friendly-url.svg
+[1]:                   http://stackoverflow.com/a/25486
+[2]:                  http://meta.stackoverflow.com/a/7696
 
 ## Usage
 
-```javascript
+```js
 $ npm install friendly-url
-friendly-url@1.0.2 node_modules/friendly-url
+(...)
 $ node
 > var friendlyUrl = require('friendly-url')
 undefined
