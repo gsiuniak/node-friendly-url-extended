@@ -7,11 +7,8 @@
   "devDependencies": {
     "coveralls": "^2.11.2",
     "istanbul": "^0.4.2",
-    "mocha": "^2.0.0"
-  },
-  "directories": {
-    "lib": "./lib",
-    "test": "./test"
+    "mocha": "^2.0.0",
+    "standard": "^6.0.7"
   },
   "homepage": "https://github.com/tallesl/node-friendly-url",
   "keywords": [
@@ -20,14 +17,13 @@
     "stackexchange"
   ],
   "license": "Fair",
-  "main": "./lib/friendly-url.js",
   "name": "friendly-url",
   "repository": {
     "type": "git",
     "url": "https://github.com/tallesl/node-friendly-url.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "standard && mocha"
   },
   "version": "1.0.2"
 }
