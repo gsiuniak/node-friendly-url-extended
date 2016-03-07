@@ -6,7 +6,7 @@
   "description": "Stack Exchange's friendly url function",
   "devDependencies": {
     "coveralls": "^2.11.2",
-    "istanbul": "^0.3.2",
+    "istanbul": "^0.4.2",
     "mocha": "^2.0.0"
   },
   "directories": {
@@ -31,4 +31,3 @@
   },
   "version": "1.0.2"
 }
-
