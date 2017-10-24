@@ -1,4 +1,4 @@
-# :grinning: friendly-url
+# :grinning: friendly-url-extended
 
 [![][build-img]][build]
 [![][coverage-img]][coverage]
@@ -27,10 +27,10 @@ This updated version includes more character/sound mappings.
 ## Usage
 
 ```js
-$ npm install friendly-url
+$ npm install friendly-url-extended
 (...)
 $ node
-> var friendlyUrl = require('friendly-url')
+> var friendlyUrl = require('friendly-url-extended')
 undefined
 friendlyUrl('What does “use strict” do in JavaScript, and what is the reasoning behind it?')
 'what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it'
