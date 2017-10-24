@@ -1,9 +1,9 @@
 {
-  "author": "Talles L <talleslasmar@gmail.com>",
+  "author": "Gage Siuniak <gsiuniak@gmail.com>",
   "bugs": {
-    "url": "https://github.com/tallesl/node-friendly-url/issues"
+    "url": "https://github.com/gsiuniak/node-friendly-url-extended/issues"
   },
-  "description": "Stack Exchange's friendly url function",
+  "description": "Stack Exchange's friendly url function (extended)",
   "devDependencies": {
     "coveralls": "^2.11.2",
     "istanbul": "^0.4.2",
@@ -13,16 +13,17 @@
   "keywords": [
     "friendly",
     "url",
+    "seo",
     "stackexchange"
   ],
   "license": "Fair",
-  "name": "friendly-url",
+  "name": "friendly-url-extended",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tallesl/node-friendly-url.git"
+    "url": "https://github.com/gsiuniak/node-friendly-url-extended.git"
   },
   "scripts": {
     "test": "standard && mocha"
   },
-  "version": "1.0.3"
+  "version": "1.0.4"
 }

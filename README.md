@@ -7,6 +7,9 @@
 [![][version-img]][version]
 
 A friendly url function made and used by Stack Exchange on their various websites ([1]&nbsp;[2]).
+Forked from https://github.com/tallesl/node-friendly-url
+
+This updated version includes more character/sound mappings.
 
 [build]:               https://travis-ci.org/tallesl/node-friendly-url
 [build-img]:           https://travis-ci.org/tallesl/node-friendly-url.svg

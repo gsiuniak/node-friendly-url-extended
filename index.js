@@ -36,17 +36,41 @@ module.exports = function (title, maxlen) {
 }
 
 function remapInternationalCharToAscii (c) {
-  if ('àåáâãåa'.indexOf(c) !== -1) return 'a'
+
+  // Vowels //
+  if ('àåáâãåaÆæÅÄα'.indexOf(c) !== -1) return 'a'
   else if ('èéêe'.indexOf(c) !== -1) return 'e'
-  else if ('ìíîïi'.indexOf(c) !== -1) return 'i'
-  else if ('òóôõøoð'.indexOf(c) !== -1) return 'o'
-  else if ('ùúûuu'.indexOf(c) !== -1) return 'u'
-  else if ('çccc'.indexOf(c) !== -1) return 'c'
-  else if ('zzž'.indexOf(c) !== -1) return 'z'
-  else if ('ssšs'.indexOf(c) !== -1) return 's'
-  else if ('ñn'.indexOf(c) !== -1) return 'n'
-  else if ('ýÿ'.indexOf(c) !== -1) return 'y'
-  else if ('gg'.indexOf(c) !== -1) return 'g'
+  else if ('ìíîïiÏ'.indexOf(c) !== -1) return 'i'
+  else if ('òóôõøoðΩωΟοŒ'.indexOf(c) !== -1) return 'o'
+  else if ('ùúûuuΥυ'.indexOf(c) !== -1) return 'u'
+
+  // Consanants //
+  else if ('Ββ'.indexOf(c) !== -1) return 'b'
+  else if ('çcccÇ'.indexOf(c) !== -1) return 'c'
+  else if ('Δδ'.indexOf(c) !== -1) return 'd'
+  else if ('ƒ'.indexOf(c) !== -1) return 'f'
+  else if ('ggΓγ'.indexOf(c) !== -1) return 'g'
+  else if ('Ιι'.indexOf(c) !== -1) return 'i'
+  else if ('Κκ'.indexOf(c) !== -1) return 'k'
+  else if ('Λλ'.indexOf(c) !== -1) return 'l'
+  else if ('Μμ'.indexOf(c) !== -1) return 'm'
+  else if ('ñnΝνÑ'.indexOf(c) !== -1) return 'n'
+  else if ('Ρρ'.indexOf(c) !== -1) return 'r'
+  else if ('ssšsΣσςŠ'.indexOf(c) !== -1) return 's'
+  else if ('Ττ'.indexOf(c) !== -1) return 's'
+  else if ('Ξξ'.indexOf(c) !== -1) return 'x'
+  else if ('ýÿŸ'.indexOf(c) !== -1) return 'y'
+  else if ('zzžΖζß'.indexOf(c) !== -1) return 'z'
+
+  // Sounds //
+  else if ('Ππ'.indexOf(c) !== -1) return 'pi'
+  else if ('Ψψ'.indexOf(c) !== -1) return 'ps'
+  else if ('Χχ'.indexOf(c) !== -1) return 'ch'
+  else if ('Χχ'.indexOf(c) !== -1) return 'ph'
+  else if ('Θθþ'.indexOf(c) !== -1) return 'th'
+  else if ('Ð'.indexOf(c) !== -1) return 'eth'
+
+  // Single One-offs //
   else if (c === 'r') return 'r'
   else if (c === 'l') return 'l'
   else if (c === 'd') return 'd'
